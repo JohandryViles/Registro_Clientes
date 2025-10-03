@@ -1,0 +1,55 @@
+<!-- PARA QUE EL CONTENIDO SE VEA BIEN SE RECOMIENDA VER LA PAGINA
+ EN DIMENSIONES DE 1480 x 780 .
+ LA RESPONSIVIDAD ES UNA CARACTERISTICA QUE IMPLEMENTARE EN UN FUTURO  -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos de la página -->
+    <meta charset="UTF-8" /> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Escalado para dispositivos móviles -->
+    <title>Registro</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="styles.css" /> <!-- Enlace a la hoja de estilos -->
+  </head>
+  <body>
+    <!-- Contenedor principal del formulario de registro -->
+    <div class="registro">
+      <h1>Registro de Clientes</h1> <!-- Título principal -->
+
+      <!-- Sección izquierda del formulario -->
+      <div class="formulario">
+        <p>Nombre:</p>
+        <input type="text" placeholder="Name" class="nombre" /> <!-- Campo para el nombre -->
+        <p>Apellido:</p>
+        <input type="text" placeholder="Last Name" class="lastname" /> <!-- Campo para el apellido -->
+        <p>#. Cedula:</p>
+        <input type="number" placeholder="1234567890" class="ci" /> <!-- Campo para la cédula -->
+        <p>Sexo:</p>
+        <select id="Sexo" name="Sexo"> <!-- Selección de sexo -->
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <p>Correo electronico:</p>
+        <input type="email" placeholder="example@email.com" class="email" /> <!-- Campo para el correo electrónico -->
+      </div>
+
+      <!-- Sección derecha del formulario -->
+      <div class="formulario-right">
+        <p class="direccion">Direccion:</p>
+        <textarea class="address" rows="3" cols="15" maxlength="150" placeholder="Address" style="resize: none;"></textarea> <!-- Campo para la dirección -->
+        <p class="phone">Telefono:</p>
+        <input type="number" placeholder="0911122233" class="num" maxlength="10"> <!-- Campo para el teléfono -->
+      </div>
+
+      <input type="submit" value="Registrar"> <!-- Botón para registrar -->
+
+      <!-- Sección de términos y condiciones -->
+      <div class="terminos">
+        <input type="checkbox" id="condiciones" class="check"> <!-- Checkbox para aceptar condiciones -->
+        <label for="condiciones" class="condicion">Acepto las Condiciones del servicio y la Politica de Privacidad de Johandry</label>
+      </div>
+    </div>
+  </body>
+  <!-- Enlace al archivo JavaScript -->
+  <script src="script.js"></script>
+</html>
